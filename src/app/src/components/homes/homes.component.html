@@ -1,5 +1,7 @@
 <div>
     <div data-test="home" *ngFor="let home of homes$ | async">
-        Home
+        <div data-test="title">{{home.title}}</div>
+        <div data-test="location">{{home.location}}</div>
+        <div data-test="image"><img src="{{home.image}}" width="200"></div>
     </div>
 </div>
